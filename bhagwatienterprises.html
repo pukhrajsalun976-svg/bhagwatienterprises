@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhagwati Industries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+color:#fff;
+}
+
+/* HEADER */
+header{
+background: rgba(0,0,0,0.7);
+backdrop-filter: blur(10px);
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header h1{color:orange;}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:orange;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+animation:slider 20s infinite;
+z-index:-1;
+}
+
+.hero{
+height:90vh;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+<section class="hero">
+    <div class="hero-content">
+        <h2>Premium Aluminium, Glass & Furniture Work</h2>
+        <a href="#" class="btn">Contact on WhatsApp</a>
+    </div>
+</section>
+
+/* BACKGROUND IMAGES */
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+animation:slider 25s infinite linear;
+z-index:-2;
+}
+
+/* DARK OVERLAY */
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:-1;
+}
+
+/* SMOOTH LOOP SLIDER */
+@keyframes slider{
+
+0%{
+background-image:url('img1.png');
+}
+
+20%{
+background-image:url('img1.png');
+}
+
+25%{
+background-image:url('img2.png');
+}
+
+45%{
+background-image:url('img2.png');
+}
+
+50%{
+background-image:url('img3.png');
+}
+
+70%{
+background-image:url('img3.png');
+}
+
+75%{
+background-image:url('img5.png');
+}
+
+95%{
+background-image:url('img5.png');
+}
+
+100%{
+background-image:url('img1.png');
+}
+}
+
+.hero h2{
+font-size:42px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:orange;
+color:white;
+border-radius:5px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ff8800;
+}
+
+/* SECTION */
+.section{
+padding:60px 40px;
+text-align:center;
+}
+
+/* SERVICES */
+.services{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(10px);
+padding:25px;
+width:250px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.2);
+}
+
+/* GALLERY */
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img, .placeholder{
+width:300px;
+height:200px;
+margin:10px;
+border-radius:10px;
+object-fit:cover;
+background:#444;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* CTA */
+.cta{
+background: linear-gradient(45deg, orange, #ff5500);
+color:white;
+padding:40px;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Bhagwati Enterprises</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Premium Aluminium , Glass & Furniture Work</h2>
+<a href="https://wa.me/918502087885" class="btn">Contact on WhatsApp</a>
+</div>
+</section>
+
+<section class="section">
+<h2>About Us</h2>
+<p>Bhagwati Enterprises is a trusted name in aluminium and glass work, delivering high-quality solutions for modern homes and commercial spaces. With years of experience in the industry, we specialize in aluminium windows, doors, glass work, railings, profiles, and custom furniture.
+
+We focus on strong materials, perfect finishing, and modern designs that enhance both durability and appearance. Our team ensures every project is completed with precision and customer satisfaction.
+
+We are committed to providing reliable service, affordable pricing, and long-lasting quality, making us a preferred choice in Jodhpur and surrounding areas.</p>
+</section>
+
+<section id="services" class="section">
+<h2>Our Services</h2><br>
+<div class="services">
+<div class="card">Aluminium Windows</div>
+<div class="card">Alluminium Doors</div>
+<div class="card">Aluminium Profiles</div>
+<div class="card">Furniture Work</div>
+<div class="card">Glass Doors & Railing</div>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2>Our Work</h2>
+
+<div class="gallery">
+
+
+<img src="work1.png" alt="Work 1">
+<img src="work2.png" alt="Work 2">
+<img src="work3.png" alt="Work 3">
+<img src="work4.png" alt="Work 4">
+<img src="work5.png" alt="Work 5">
+<img src="work6.png" alt="Work 6">
+<img src="work7.png" alt="Work 7">
+<img src="work8.png" alt="Work 8">
+<img src="work9.jpg" alt="Work 9">
+<img src="work11.jpg" alt="Work 10">
+<img src="work10.jpg" alt="Work 11">
+<img src="work12.jpg" alt="Work 12">
+<img src="work13.jpg" alt="Work 13">
+<img src="work14.jpg" alt="Work 14">
+<img src="work15.jpg" alt="Work 15">
+<img src="work16.jpg" alt="Work 16">
+<img src="work17.jpg" alt="Work 17">
+<img src="work18.png" alt="Work 18">
+<img src="work19.jpg" alt="Work 19">
+<img src="work20.jpg" alt="Work 20">
+<img src="work21.jpg" alt="Work 21">
+<img src="work22.jpg" alt="Work 22">
+<img src="work23.jpg" alt="Work 23">
+<img src="work24.jpg" alt="Work 24">
+</div>
+</section>
+
+<section class="cta">
+<h2>Need Aluminium Work? Contact Us Now</h2>
+<p>Fast Service | Best Quality | Affordable Price</p>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+<p>📞 Phone: 8502087885</p>
+<p>📧 Email: bhagwati.in85020@gmail.com</p>
+<p>📍 Bhagwati Enterprises, opposite rasraj sweets, pal gaon, Jodhpur, Rajasthan, 342001 </p>
+</section>
+
+<footer>
+<p>© 2026 Bhagwati Enterprises</p>
+</footer>
+
+<a href="https://wa.me/918502087885" class="whatsapp">💬</a>
+
+</body>
+</html>
